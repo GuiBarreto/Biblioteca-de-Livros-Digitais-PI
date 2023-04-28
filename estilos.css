@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    background-image: url(pexels-sohail-nachiti-807598.jpg);
+}
+
+.cabeça {
+
+
+width: 240px;
+height: 45px;
+    
+}
+
+header {
+    
+    display: flex;
+    justify-content: end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-left: 10px;
+    
+}
+
+
+
+.imagem1 {
+    width: 30px;
+    height: 20px;
+}
+
+.imagem2 {
+    width: 30px;
+    height: 28px;
+    border-radius: 20px;
+    
+    
+}
+
+.cabeça a {
+    text-decoration: none;
+    color: white;
+}
+
+.cabeça a:hover {
+    text-decoration: underline;
+
+}
+
+.cabeça img:hover {
+    background-color: gainsboro;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+}
+.meio {
+    
+    width: 630px;
+    
+
+}
+
+.aux{
+
+ 
+
+width: 300px;
+padding-top: 120px;
+padding-left: 170px;
+
+
+}
+
+.imagens {
+    background-color: white;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.imagens input {
+    width: 450px;
+    height: 40px;
+    box-shadow: 0 0 0 0;
+    outline: none;
+    border: 1px solid white;
+    font-size: 15px;
+    
+    
+    
+}
+
+.imagens img {
+    width: 20px;
+    height: 20px;
+    padding-top: 13px;
+    
+    
+    
+}
+
+#help {
+    margin-right: 10px;
+}
+
+aside {
+    display: flex;
+    justify-content: center; 
+    height: 60px;
+    
+}
+
+.meio1 {
+    width: 630px;
+    flex-direction: row;
+    display: flex;
+}
+
+.parte1 {
+flex: 1;
+
+justify-content: end;
+
+
+
+
+}
+.parte2 {
+    flex: 1;
+    
+    
+    
+    
+}
+
+.parte1 p {
+background-color: #cac3c3;
+width: 120px;
+font-size: 17px;
+padding-top: 8px;
+padding-bottom: 8px;
+margin-left: 180px;
+padding-left: 8px;
+
+
+}
+
+.parte2 p {
+background-color: #cac3c3;
+width: 120px;
+font-size: 17px;
+padding: 8px;
+
+}
+
+.meio1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.final {
+    background-color: #cac3c3;
+    border: 1px solid #727272;
+    height: 34px;
+}
+
+.final1 {
+    background-color: #cac3c3;
+    border: 1px solid #727272;
+    height: 38px;
+}
+
+.final p {
+    font-size: 15px;
+    padding-left: 40px;
+    padding-top: 10px;
+    
+    margin: 0;
+    
+}
+
+footer {
+    background-color: #cac3c3;
+    height: 74px;
+}
+
+.final a {
+    text-decoration: none;
+    color: black;
+   
+}
+
+.prime ul {
+list-style: none;
+display: flex;
+
+flex: 1;
+}
+
+.second  ul{
+list-style: none;
+flex: 1;
+display: flex;
+}
+
+.final1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.final1 li {
+    margin-right: 20px;
+    font-size: 15px;
+    
+}
+
+.final1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.final1 a:hover {
+    color: white;
+}
+
+.final p:hover {
+    color: white;
+}
+
+.parte1 p:hover {
+ border: 1px solid black;
+}
+
+.parte2 p:hover {
+    border: 1px solid black;
+
+}
+
+@media only screen and (max-width:750px){
+
+    .meio input {
+        width: 70%;
+    }
+
+    .imagens {
+        width: 400px;
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .aux {
+        padding: 0;
+        margin: 0;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .meio1 {
+       flex-direction: column;
+    }
+
+    .parte1 p {
+        
+
+    }
+    .parte2 p {
+        margin-left: 175px;
+
+    }
+
+    .final1 {
+        display: flex;
+    flex-direction: column;
+    }
+
+    footer {
+        height: 150px;
+        border: 1px solid #727272;
+
+    }
+}
