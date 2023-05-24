@@ -33,6 +33,20 @@ body {
     background-color: var(--primary-color);
 }
 
+button {
+    padding; 5px;
+    width: 80px;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--footer-color);
+    border-radius: 20px;
+    borde: none;
+}
+
+
 .logo{
     display: flex;
     justify-content: center;
@@ -52,6 +66,14 @@ body {
     border-radius: 20px;
 }
 
+#viewerCanvas {
+    
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
 input {
     padding: 5px;
     width: 450px;
@@ -61,6 +83,9 @@ input {
 }
 
 
+ img {
+    padding-right: 10px;
+ }
 
 footer {
      background-image: linear-gradient(to bottom, var(--primary-color),var(--footer-color));
@@ -88,6 +113,8 @@ footer {
         display: block;
 
     }
+
+
     
     h1 {
         font-size: 20px;

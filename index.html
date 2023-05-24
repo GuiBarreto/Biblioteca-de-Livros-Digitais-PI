@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="imagem/book.ico" type="image/x-icon">
     <title>Biblioteca de Livros Digitais</title>
     <link rel="stylesheet" href="styles.css">
+    
+
 </head>
 <body>
     <header>
@@ -16,12 +18,38 @@
             <img src="imagem/Univesp_logo.png" alt="logo">
         </div>
             <div class="search">
-                <input type="text" placeholder="Pesquise seu livro acadêmico aqui" >                 
-                
                 <img src="imagem/png-transparent-computer-icons-magnifying-glass-android-google-plus-glass-magnifier-android-removebg-preview.png" alt="lente">
+                <input id="enter" type="text" class="isbn" placeholder="Digite o ISBN do livro acadêmico aqui" required>
+                <button type="submit" value="enviar" class="btn">SEARCH</button>  
+               
+                
             </div>
+
+    <div id="viewerCanvas" style="width: 750px; height: 700px"></div>
+
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <script>
+        const button = document.querySelector(".btn");
+        const isbn = document.querySelector(".isbn");
+      
+    
+      button.addEventListener("click", initialiase);
+    
+      google.books.load({"language":"en"});
+    
+      function alertNotFound(){
+        alert("Book not found!");
+      }
+    
+      function initialiase(){
+        var viewer = new google.books.DefaultViewer(document.getElementById("viewerCanvas"));
+        viewer.load("ISBN:"+isbn.value,alertNotFound);
+        auto.addEventListener("click",nextStep(viewer));
+      }
+    
+      google.books.setOnLoadCallback(initialiase);
+    </script>
              
-        
     <footer>
         Criado por Guilherme Barreto, Eliane Alves da Silva, Rafael Henrique Benedito e Sophia Blazizza
     </footer>
